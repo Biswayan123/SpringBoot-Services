@@ -105,22 +105,22 @@ class SpringBootRestServiceApplicationTests {
 	}
 	
 	@Test
-	public void addBookControllerTest() throws Exception {
-		
-		Library lib = new Library();
-		
-		ObjectMapper map = new ObjectMapper(); //converts from Java object to Json String
+	public void addBookControllerTest() throws Exception
+	{
+		Library lib = buildLibrary();
+		ObjectMapper map = new ObjectMapper();
 		String jsonString = map.writeValueAsString(lib);
 		
-		when(libraryService.buildId(lib.getIsbn(),lib.getAisle())).thenReturn(lib.getId());
 		
+		when(libraryService.buildId(lib.getIsbn(),lib.getAisle())).thenReturn(lib.getId());
 		when(libraryService.checkBookAlreadyExist(lib.getId())).thenReturn(false);
 		when(repository.save(any())).thenReturn(lib);
 		
 		this.mockMvc.perform(post("/addBook").contentType(MediaType.APPLICATION_JSON)
-				.content(jsonString)).andDo(print()).andDo(print()).andExpect(status().isCreated())
+				.content(jsonString)).andDo(print()).andExpect(status().isCreated())
 		.andExpect(jsonPath("$.id").value(lib.getId()));
-	}
+		
+		}
 	
 	
 	@Test
@@ -159,78 +159,6 @@ class SpringBootRestServiceApplicationTests {
 		
 		
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-//	@Test
-//	public void addBookTest()
-//	{
-//		//mock
-//		
-//		Library lib = buildLibrary();
-//		when(libraryService.buildId(lib.getIsbn(),lib.getAisle())).thenReturn(lib.getId());
-//		when(libraryService.checkBookAlreadyExist(lib.getId())).thenReturn(false);
-//		when(repository.save(any())).thenReturn(lib);
-//		ResponseEntity response	=con.addBookImplementation(buildLibrary());//step
-//		System.out.println(response.getStatusCode());
-//		assertEquals(response.getStatusCode(),HttpStatus.CREATED);
-//		AddResponse ad= (AddResponse) response.getBody();
-//		ad.getId();
-//		assertEquals(lib.getId(),ad.getId());
-//		assertEquals("Success Book is Added",ad.getMsg());
-//		
-//		//call Mock service from code
-//		
-//	}
-	
-//	@Test
-//	public void addBookControllerTest() throws Exception
-//	{
-//		Library lib = buildLibrary();
-//		ObjectMapper map =new ObjectMapper();
-//		String jsonString = map.writeValueAsString(lib);
-//		
-//		
-//		when(libraryService.buildId(lib.getIsbn(),lib.getAisle())).thenReturn(lib.getId());
-//		when(libraryService.checkBookAlreadyExist(lib.getId())).thenReturn(false);
-//		when(repository.save(any())).thenReturn(lib);
-//		
-//		this.mockMvc.perform(post("/addBook").contentType(MediaType.APPLICATION_JSON)
-//				.content(jsonString)).andDo(print()).andExpect(status().isCreated())
-//		.andExpect(jsonPath("$.id").value(lib.getId()));
-//		
-//		}
-//	
-//	@Test
-//	public void getBookByAuthorTest() throws Exception
-//	{
-//		List<Library> li =new ArrayList<Library>();
-//		li.add(buildLibrary());
-//		li.add(buildLibrary());
-//		when(repository.findAllByAuthor(any())).thenReturn(li);
-//		this.mockMvc.perform(get("/getBooks/author").param("authorname", "Rahul Shetty"))
-//		.andDo(print()).andExpect(status().isOk()).
-//		andExpect(jsonPath("$.length()",is(2))).
-//		andExpect(jsonPath("$.[0].id").value("sfe3b"));
-//		
-//				}
-//	
-	
-	
-	
 	
 	
 	
