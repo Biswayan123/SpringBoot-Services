@@ -1,0 +1,56 @@
+2025-03-12 19:30:39.499  INFO 77283 --- [main] .r.SpringBootRestServiceApplicationTests : Starting SpringBootRestServiceApplicationTests on bchattop-mac with PID 77283 (started by bchattop in /Users/bchattop/Downloads/SpringBootRestService)
+2025-03-12 19:30:39.501  INFO 77283 --- [main] .r.SpringBootRestServiceApplicationTests : The following profiles are active: @activatedProperties@
+2025-03-12 19:30:39.702  INFO 77283 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2025-03-12 19:30:39.725  INFO 77283 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20ms. Found 1 JPA repository interfaces.
+2025-03-12 19:30:40.049  INFO 77283 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2025-03-12 19:30:40.069  INFO 77283 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-12 19:30:40.088  INFO 77283 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2025-03-12 19:30:40.102  INFO 77283 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2025-03-12 19:30:40.143  WARN 77283 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-12 19:30:40.154  INFO 77283 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-12 19:30:40.156  WARN 77283 --- [task-1] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2025-03-12 19:30:40.343  INFO 77283 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-03-12 19:30:40.344  INFO 77283 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-03-12 19:30:40.348  INFO 77283 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 4 ms
+2025-03-12 19:30:40.353  INFO 77283 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2025-03-12 19:30:40.353  INFO 77283 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2025-03-12 19:30:40.357  INFO 77283 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-12 19:30:40.358  INFO 77283 --- [main] .r.SpringBootRestServiceApplicationTests : Started SpringBootRestServiceApplicationTests in 0.955 seconds (JVM running for 1.252)
+2025-03-12 19:30:40.366  INFO 77283 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2025-03-12 19:30:40.523  INFO 77283 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-03-12 19:30:40.527  INFO 77283 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-12 19:30:40.588  INFO 77283 --- [main] c.r.controller.LibraryController         : Book  is deleted 
+2025-03-12 19:30:40.595  INFO 77283 --- [main] c.r.controller.LibraryController         : Book do not exist so creating one
+2025-03-12 19:30:40.618  INFO 77283 --- [main] c.r.controller.LibraryController         : Book  exist so skipping creation
+2025-03-12 19:30:40.624  INFO 77283 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-12 19:30:40.625  INFO 77283 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2025-03-12 19:30:40.625  INFO 77283 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-12 19:30:40.628  INFO 77283 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-12 19:43:57.003  INFO 77492 --- [main] .r.SpringBootRestServiceApplicationTests : Starting SpringBootRestServiceApplicationTests on bchattop-mac with PID 77492 (started by bchattop in /Users/bchattop/Downloads/SpringBootRestService)
+2025-03-12 19:43:57.004  INFO 77492 --- [main] .r.SpringBootRestServiceApplicationTests : The following profiles are active: @activatedProperties@
+2025-03-12 19:43:57.198  INFO 77492 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2025-03-12 19:43:57.217  INFO 77492 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 1 JPA repository interfaces.
+2025-03-12 19:43:57.538  INFO 77492 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2025-03-12 19:43:57.557  INFO 77492 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-12 19:43:57.573  INFO 77492 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+2025-03-12 19:43:57.588  INFO 77492 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2025-03-12 19:43:57.631  WARN 77492 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-12 19:43:57.636  INFO 77492 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-12 19:43:57.637  WARN 77492 --- [task-1] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2025-03-12 19:43:57.835  INFO 77492 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-03-12 19:43:57.836  INFO 77492 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-03-12 19:43:57.840  INFO 77492 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 4 ms
+2025-03-12 19:43:57.845  INFO 77492 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2025-03-12 19:43:57.845  INFO 77492 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2025-03-12 19:43:57.850  INFO 77492 --- [main] .r.SpringBootRestServiceApplicationTests : Started SpringBootRestServiceApplicationTests in 0.935 seconds (JVM running for 1.224)
+2025-03-12 19:43:57.851  INFO 77492 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-12 19:43:57.858  INFO 77492 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2025-03-12 19:43:58.013  INFO 77492 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-03-12 19:43:58.017  INFO 77492 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-12 19:43:58.071  INFO 77492 --- [main] c.r.controller.LibraryController         : Book  is deleted 
+2025-03-12 19:43:58.077  INFO 77492 --- [main] c.r.controller.LibraryController         : Book do not exist so creating one
+2025-03-12 19:43:58.101  INFO 77492 --- [main] c.r.controller.LibraryController         : Book  exist so skipping creation
+2025-03-12 19:43:58.109  INFO 77492 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-12 19:43:58.109  INFO 77492 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2025-03-12 19:43:58.110  INFO 77492 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-12 19:43:58.113  INFO 77492 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
